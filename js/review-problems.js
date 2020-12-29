@@ -2,18 +2,22 @@
 
 //TODO: Write a function named 'typeOfValue' that takes in a value and returns its type.
 
+function typeOfValue(type) {
+    return typeof type;
+}
 
-
-//typeOfValue("hello")      // "string"
-// typeOfValue(123)         // "number"
-// typeOfValue([])          // "object"
-// typeOfValue([4,5,6])     // "object"
+typeOfValue("hello")      // "string"
+typeOfValue(123)         // "number"
+typeOfValue([])          // "object"
+typeOfValue([4,5,6])     // "object"
 
 
 
 
 
 //TODO: Write a function named 'isPositive' that takes in a number and returns true or false based on whether the input is positive.
+
+
 
 //isPositive(2)         // true
 // isPositive(-4)       // false
