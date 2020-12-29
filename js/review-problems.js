@@ -31,18 +31,18 @@
 
 //TODO: Write a function named getLowestNumber that takes in 3 arguments. If all 3 inputs are numbers or numeric strings, then return the lowest number. If any of the 3 inputs is missing or non-numeric, then return false.
 
-function getLowestNumber(x, y, z) {
-    if (isNaN(x) || isNaN(y) || isNaN(z)) {
-            return false;
-        } else {
-            return Math.min(x, y, z);
-        }
-    }
-
-
-getLowestNumber(1, 3, 2)         // 1
-getLowestNumber(0, 1, "2")        // 0
-getLowestNumber(1, 2, 'x')        // false
+// function getLowestNumber(x, y, z) {
+//     if (isNaN(x) || isNaN(y) || isNaN(z)) {
+//             return false;
+//         } else {
+//             return Math.min(x, y, z);
+//         }
+//     }
+//
+//
+// getLowestNumber(1, 3, 2)         // 1
+// getLowestNumber(0, 1, "2")        // 0
+// getLowestNumber(1, 2, 'x')        // false
 
 
 
@@ -52,17 +52,17 @@ getLowestNumber(1, 2, 'x')        // false
 
 
 
-function subtract(x, y) {
-    if (isNaN(parseFloat(x)) && isNaN(parseFloat(y))) {
-        return false;
-    } else {
-        return x - y;
-    }
-}
-
-subtract(2, 1)             // 1
-subtract("2", 4)           // -2
-subtract(true, false)      // false
+// function subtract(x, y) {
+//     if (isNaN(parseFloat(x)) && isNaN(parseFloat(y))) {
+//         return false;
+//     } else {
+//         return x - y;
+//     }
+// }
+//
+// subtract(2, 1)             // 1
+// subtract("2", 4)           // -2
+// subtract(true, false)      // false
 
 
 
@@ -70,14 +70,14 @@ subtract(true, false)      // false
 
 //TODO: Write a function named divisibleByThree that takes in an input and returns a boolean indicating whether the input is divisible by 3.  Nonnumeric inputs should return false.
 
-function divisibleByThree(x) {
-    return x % 3 === 0;
-}
-
-divisibleByThree(3)         // true
-divisibleByThree("6")       // true
-divisibleByThree("8")       // false
-divisibleByThree("red")     // false
+// function divisibleByThree(x) {
+//     return x % 3 === 0;
+// }
+//
+// divisibleByThree(3)         // true
+// divisibleByThree("6")       // true
+// divisibleByThree("8")       // false
+// divisibleByThree("red")     // false
 
 
 
@@ -86,8 +86,10 @@ divisibleByThree("red")     // false
 //TODO: Write a function named isSumLess100 that accepts two inputs (x, y).  If one or more of the inputs is nonnumeric, return false.  Return true if the sum of both inputs is less than 100, otherwise return false.
 
 function isSumLess100(x, y) {
-    if (isNaN(x) + isNaN(y) < 100) {
+    if (parseFloat(x) + parseFloat(y) < 100) {
         return true;
+    } else {
+        return false;
     }
 }
 
