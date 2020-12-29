@@ -17,17 +17,21 @@ typeOfValue([4,5,6])     // "object"
 
 //TODO: Write a function named 'isPositive' that takes in a number and returns true or false based on whether the input is positive.
 
+function isPositive(num) {
+    return num > 0;
+}
 
-
-//isPositive(2)         // true
-// isPositive(-4)       // false
-// isPositive(0)        // false
+isPositive(2)         // true
+isPositive(-4)       // false
+isPositive(0)        // false
 
 
 
 
 
 //TODO: Write a function named getLowestNumber that takes in 3 arguments. If all 3 inputs are numbers or numeric strings, then return the lowest number. If any of the 3 inputs is missing or non-numeric, then return false.
+
+
 
 // getLowestNumber(1, 3, 2)         // 1
 // geLowestNumber(0, 1, "2")        // 0
