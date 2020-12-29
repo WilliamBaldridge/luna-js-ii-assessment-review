@@ -2,6 +2,8 @@
 
 //TODO: Write a function named 'typeOfValue' that takes in a value and returns its type.
 
+
+
 //typeOfValue("hello")      // "string"
 // typeOfValue(123)         // "number"
 // typeOfValue([])          // "object"
